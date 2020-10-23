@@ -145,7 +145,7 @@ for ti=1:numel(t)
     ylabel(labels(xy(2)))
 
     ax.DataAspectRatio = [1,1,1];
-    title(strjoin([fieldType,', ',component],''))
+    title(strjoin({fieldType,', ',component},''))
     try
         caxis(caxislim)
     catch
